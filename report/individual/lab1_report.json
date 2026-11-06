@@ -1,0 +1,45 @@
+{
+ "seed": 5022,
+ "predictions": {
+  "ml_f1": {
+   "text": "F1 khoảng 0.88 - 0.92. Precision sẽ cao hơn Recall vì dữ liệu lệch (ít spam hơn ham), mô hình chỉ báo spam khi thực sự có các từ khóa rất mạnh, nên ít báo nhầm (FP thấp -> Precision cao) nhưng dễ bỏ lọt các tin spam viết lách luật (FN cao -> Recall thấp hơn).",
+   "time": "16:03:25"
+  },
+  "ml_lr": {
+   "text": "0.65",
+   "time": "16:03:36"
+  }
+ },
+ "checks": {
+  "1.1 vectorize": true,
+  "1.2 sigmoid / predict_proba": true,
+  "1.3 train_logreg": true,
+  "1.4 metrics": true,
+  "2.1 build_mlp": true
+ },
+ "experiments": [
+  {
+   "key": "ml_f1",
+   "time": "16:03:27"
+  },
+  {
+   "key": "ml_lr",
+   "time": "16:03:38"
+  }
+ ],
+ "challenge": 0,
+ "results": {
+  "1. BoW + LogReg (tự code)": {
+   "accuracy": 0.9638709677419355,
+   "precision": 0.8791208791208791,
+   "recall": 0.8247422680412371,
+   "f1": 0.851063829787234,
+   "f1_SUB": 0.8571428571428571,
+   "train_s": 3.127720218000036,
+   "msg_per_s": 42675.08582781853,
+   "p50_ms": 0.04675449997648684,
+   "p95_ms": 0.07530020001809125,
+   "usd_per_1k": 0.0
+  }
+ }
+}
